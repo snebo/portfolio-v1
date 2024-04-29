@@ -1,0 +1,46 @@
+.aboutSection {
+    background-color: black;
+    padding: 10%;
+}
+
+.aboutSection * {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.aboutSection h2 {
+    font-size: 2.5em;
+    /* margin-bottom: 15px; */
+}
+
+.picContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.aboutText{
+    width: 60%;
+}
+.aboutSummary{
+}
+
+#profilePic {
+    /* display: inline-block; */
+    width: 30%;
+    float: right;
+    margin-top: -3%;
+    padding: 15px;
+    height: auto;
+    max-width: 500px;
+    min-width: 250px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    #profilePic {
+        margin: 0;
+    }
+    .aboutText{width: 100%; ;}
+    .aboutSummary{display: flex;
+        flex-direction: column; gap:10px;}
+}
