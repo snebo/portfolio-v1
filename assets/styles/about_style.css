@@ -18,29 +18,49 @@
     clear: both;
     display: table;
 }
-.aboutText{
+
+.aboutText,
+.aboutSection>div>h4 {
+    /* border: 1px solid white; */
     width: 60%;
-}
-.aboutSummary{
 }
 
 #profilePic {
     /* display: inline-block; */
-    width: 30%;
+    width: 35%;
     float: right;
-    margin-top: -3%;
-    padding: 15px;
-    height: auto;
+    margin-top: -14%;
+    padding: 10px;
+    /* height: auto; */
     max-width: 500px;
-    min-width: 250px;
+    min-width: 180px;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutSection>div>h4 {
+        width: 100%;
+    }
+
+    #profilePic {
+        margin-top: -3%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
     #profilePic {
         margin: 0;
     }
-    .aboutText{width: 100%; ;}
-    .aboutSummary{display: flex;
-        flex-direction: column; gap:10px;}
+
+    .aboutText,
+    .aboutSection>div>h4 {
+        width: 100%;
+        ;
+    }
+
+    .aboutSummary {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
