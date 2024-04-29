@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.cardContainer {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    ;
+}
+
+.titleCard {
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%
+}
+
+.titleName {
+    font-size: 4em;
+    /* font-style: ; */
+}
+
+.titlePosition {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.titleLogo {
+    /* margin-bottom: 5%; */
+    justify-content: flex-end;
+    align-self: center;
+    cursor: pointer;
+}
+
+.titleLogo:hover {
+    /* convet image to learn_more */
+}
