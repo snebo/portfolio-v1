@@ -19,18 +19,53 @@
 
 .branchGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    border: 1px solid red;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid red; */
     /* grid-template-columns: repeat(auto-fill, minmax(330px, 45%)); */
-    /* grid-row-gap: 10%; */
-    /* grid-column-gap: 5%; */
+}
+
+.branch:last-child {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.branch:nth-child(2) {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.branch:nth-child(3) {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.branch:first-child {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+@media only screen and (max-width: 900px) {
+    .branchGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .branch:nth-child(n) {
+        border: none;
+        border-bottom: 1px solid white;
+        /* border-width:medium; */
+    }
+
+    .branch:last-child {
+        border: none;
+    }
 }
 
 .branchGrid>* {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10%;
 }
 
 /* code to show inner lines of grid only */
+
 /* TODO: limit the max number of grids cols that can be created */
 /* Hilight only the inner border (maybe use media q and child) */
