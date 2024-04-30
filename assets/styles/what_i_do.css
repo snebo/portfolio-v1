@@ -17,6 +17,10 @@
     display: inline-block;
 }
 
+.branch>div>h3 {
+    font-size: 1.7em;
+}
+
 .branchGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,14 +62,13 @@
     .branch:last-child {
         border: none;
     }
+
+    .branch>div>img {
+        display: block;
+    }
 }
 
 .branchGrid>* {
     /* border: 1px solid; */
     padding: 10%;
 }
-
-/* code to show inner lines of grid only */
-
-/* TODO: limit the max number of grids cols that can be created */
-/* Hilight only the inner border (maybe use media q and child) */
