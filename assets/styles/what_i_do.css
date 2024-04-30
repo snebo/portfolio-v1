@@ -1,0 +1,36 @@
+.whatIDo {
+    background-color: antiquewhite;
+    padding: 10%;
+    line-height: 1.5em;
+}
+
+.whatIDo>* {
+    margin-bottom: 20px;
+}
+
+.whatIDo>h2 {
+    font-size: 2.5em;
+    padding-bottom: 5px;
+}
+
+.branchTitle {
+    display: inline-block;
+}
+
+.branchGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    border: 1px solid red;
+    /* grid-template-columns: repeat(auto-fill, minmax(330px, 45%)); */
+    /* grid-row-gap: 10%; */
+    /* grid-column-gap: 5%; */
+}
+
+.branchGrid>* {
+    border: 1px solid;
+    padding: 10%;
+}
+
+/* code to show inner lines of grid only */
+/* TODO: limit the max number of grids cols that can be created */
+/* Hilight only the inner border (maybe use media q and child) */
