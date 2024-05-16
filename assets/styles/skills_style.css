@@ -1,4 +1,43 @@
 .skillSection{
     background-color: black;
-    padding:10%
+    padding:10%;
+    height: 100vh;
+}
+.skillSection > *{margin-bottom: 20px;}
+.skillDivider{
+    height: 80%;;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* padding: 20px; */
+    border: 1x solid white;
+}
+.skillTitle{
+    display: flex;
+    gap:10px; /*gap between icon and title */
+    height: 50px; 
+    /* justify-content: center;  */
+    align-items: center;
+}
+.skillTitle>h3{font-size: 1.5em;}
+.skillContainer{width: 50%;}
+.skills{
+    display: grid;
+    /* border: 1px solid white; */
+    /* padding: 20px; */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* gap: 15px; */
+    column-gap: 10px;
+    row-gap: 20px;
+    margin-left: -15px;
+    justify-items: center;
+}
+.skills > div{
+    width: 90px;
+    height: 90px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
