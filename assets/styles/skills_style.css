@@ -57,15 +57,37 @@
     justify-content: center;
     border-radius: 50%;
 }
-.tools, .knowledge{margin-top: -5px;}
-.tools>li, .knowledge>li{
+
+.tools,
+.knowledge {
+    margin-top: -5px;
+}
+
+.tools>li,
+.knowledge>li {
     list-style-type: none;
     line-height: 140%;
 }
-.tools>li:before, .knowledge>li:before{
-    content:'✔️ '
+
+.tools>li:before,
+.knowledge>li:before {
+    content: '✔️ '
 }
-.technicalSkills> *{
+
+.technicalSkills>* {
     /* border: 1px solid white; */
     margin-bottom: 20px;
+}
+
+.designApps {
+    /* display: flex; */
+    /* gap: 20px; */
+    /* justify-content: center; */
+}
+
+.designApps>img {
+    height: 75px;
+    width: 75px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
